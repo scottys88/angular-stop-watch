@@ -1,0 +1,8 @@
+<p>timer-buttons works!</p>
+<div class="timer-buttons">
+  <ul *ngIf="timerItems$ | async as timerItems">
+    <li *ngFor="let item of timerItems">
+      {{item.name}}
+    </li>
+  </ul>
+</div>
